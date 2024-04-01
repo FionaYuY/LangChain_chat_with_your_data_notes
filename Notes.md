@@ -12,7 +12,7 @@
    - Indexes
    - Chains
    - Agents
-3. Document loading -> splitting -> storage
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/03d792a22b260c3f9c8748fe23c66fd52c54661f/RAG.png)
 
 # Document loading 
 1. Before create applications, you have to load your data into a format that can be work with.
@@ -50,4 +50,15 @@ split_documents() - split documents
    - RecursiveCharacterTextSplitter(): Implementation of splitteing text that looks at characters. Recursively tries to split by different characters to find one that works.
    - Language(): for CPP, Python, Ruby, Markdwon etc
 
-
+# Vectorstores and Embedding 
+1. Embeddings
+   - Embedding vector captures content/meaning
+   - Text with similar content will have similar vectors
+   - We can compare those vectors to find pieces of texts that are similar
+2. Vector store
+   - is a database where you can easily look up similar vectors later on.
+   - This will become useful where we're trying to find documents that are relevant for a question at hand.
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/eace526aa4ab9764d9cd976a715b4171f625a582/VectorStore.png)
+   - We can then take the question at hand, create an embedding, and then do comparisons to all the different vectors in the vector store, and then pick the n most similar.
+   - We then take those n most similar chunks, and pass them along with the question into an LLM, an get back an answer
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/2840aa8cb3fb93f0b21a9232d0de19639501a239/VectorStore_and_Database.png)
