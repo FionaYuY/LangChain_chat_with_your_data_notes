@@ -62,3 +62,35 @@ split_documents() - split documents
    - We can then take the question at hand, create an embedding, and then do comparisons to all the different vectors in the vector store, and then pick the n most similar.
    - We then take those n most similar chunks, and pass them along with the question into an LLM, an get back an answer
 ![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/2840aa8cb3fb93f0b21a9232d0de19639501a239/VectorStore_and_Database.png)
+
+# Retrieval
+1. Retrieval is important at query time, when you've got a query that comes in and you want to retrieved the most relevant splits.
+2. Retrieval
+   - Accessing/indexing the data in the vector store
+     + Basic semantic similarity
+     + Maximum marginal relevance
+     + Including Metadata
+   - LLM Aided Retrieval
+3. Maximum marginal relevance (MMR)
+   - you may not always want to choose the most similar responses
+4. MMR algorithm
+   - query the vector store
+   - choose the 'fetch_k' most similar responses
+   - within those responses choose the 'k' most diverse
+5. LLM Aided Retrieval
+   - There are several situations where the query applied to the database is more than just the quesiton asked
+   - One is SelfQuery, where we use an LLM to convert the user question into a query
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/dcee8c7adff177a69f912b5b9a95abf1405454cc/LLM_Aided_Retrieval.png)
+6. Compression
+   - Increase the number of results you can put in the context by shrinking the responses to only the relevant information
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/57207de7ffc4d6672ccf54c168dcbbb342adc8d0/screenshots/Compression.png)
+
+
+
+
+
+
+
+
+
+
