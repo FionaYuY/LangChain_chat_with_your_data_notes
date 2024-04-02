@@ -84,9 +84,17 @@ split_documents() - split documents
 6. Compression
    - Increase the number of results you can put in the context by shrinking the responses to only the relevant information
 ![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/57207de7ffc4d6672ccf54c168dcbbb342adc8d0/screenshots/Compression.png)
+7. Other types of retrieval
+   - Not using a vector database, such as:
+     + SVM
+     + TF-IDF
+     + ...
 
-
-
+## Question Answering
+1. Question Answering
+   - Multiple relevant documents have been retrieved from the vector store
+   - Potentially compress the relevant splits to fit into the LLM context
+   - Send the information along with out question to an LLM to select and format an answer
 
 
 
