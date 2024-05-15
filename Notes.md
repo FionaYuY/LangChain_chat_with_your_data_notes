@@ -12,6 +12,8 @@
    - Indexes
    - Chains
    - Agents
+![螢幕擷取畫面 (713)](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/761e2b59-8f73-4bdf-a0dc-f5c75b720e80)
+
 ![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/blob/03d792a22b260c3f9c8748fe23c66fd52c54661f/RAG.png)
 
 # Document loading 
