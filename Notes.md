@@ -42,8 +42,11 @@ langchain.text_splitter.CharacterTextSplitter(
 4. The text splitters in LangChain all have a create documents and a split documents method. This involves the same logic under the hood, it just exposes a slightly different interface. One that takes in a list of text and another takes in a list of documents.
 
 Methods:
+
 create_documents() - Create documents from a list of texts
+
 split_documents() - split documents
+
 5. Types of splitters (lists a few of them)
    - CharacterTextSplitter()
    - MarkdownHeaderTextSplitter()
