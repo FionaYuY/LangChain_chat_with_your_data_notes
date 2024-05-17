@@ -78,6 +78,9 @@ split_documents() - split documents
    - LLM Aided Retrieval
 3. Maximum marginal relevance (MMR)
    - you may not always want to choose the most similar responses
+
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/333b2a73-3b73-452f-841f-9bb46d78b06e)
+
 4. MMR algorithm
    - query the vector store
    - choose the 'fetch_k' most similar responses
