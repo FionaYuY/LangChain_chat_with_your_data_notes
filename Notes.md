@@ -103,7 +103,16 @@ split_documents() - split documents
    - Multiple relevant documents have been retrieved from the vector store
    - Potentially compress the relevant splits to fit into the LLM context
    - Send the information along with out question to an LLM to select and format an answer
+2. RetrievalQA chain
 
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/8cb86669-3794-410a-95f9-7059d6bbd934)
+
+3. 3 additional methods: Sometimes there's can be a lot of documents, that you can't pass them all into the same context window.
+   - Map_reduce
+   - Refine
+   - Map_rerank
+
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/0bdcc2e3-48d1-403a-92ca-f101a8b4e700)
 
 
 
