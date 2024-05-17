@@ -114,7 +114,18 @@ split_documents() - split documents
 
 ![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/0bdcc2e3-48d1-403a-92ca-f101a8b4e700)
 
+## Question Answering ChatBot
+![image](https://github.com/FionaYuY/LangChain_chat_with_your_data_notes/assets/151610467/894e2474-d8c7-47f7-848f-2aa5f3216a69)
 
+1. chat history
+
+```
+from langchain.memory import ConversationBufferMemory
+memory = ConversationBufferMemory(
+   memory_key = 'chat_history',
+   return_messages = True
+)
+```
 
 
 
